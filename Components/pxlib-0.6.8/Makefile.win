@@ -1,0 +1,63 @@
+# Project: pxlib
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = src/gregor.o src/paradox.o src/px_crypt.o src/px_encode.o src/px_error.o src/px_head.o src/px_io.o src/px_memory.o src/px_memprof.o src/px_misc.o libiconv-1.17/src/iconv.o libiconv-1.17/src/iconv_no_i18n.o
+LINKOBJ  = src/gregor.o src/paradox.o src/px_crypt.o src/px_encode.o src/px_error.o src/px_head.o src/px_io.o src/px_memory.o src/px_memprof.o src/px_misc.o libiconv-1.17/src/iconv.o libiconv-1.17/src/iconv_no_i18n.o
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++" -I"include"
+BIN      = pxlib.dll
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\devcpp.exe INTERNAL_DEL
+DEF      = libpxlib.def
+STATIC   = libpxlib.a
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN) $(DEF) $(STATIC)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) -shared $(LINKOBJ) -o $(BIN) $(LIBS) -Wl,--output-def,$(DEF),--out-implib,$(STATIC),--add-stdcall-alias
+
+src/gregor.o: src/gregor.c
+	$(CPP) -c src/gregor.c -o src/gregor.o $(CXXFLAGS)
+
+src/paradox.o: src/paradox.c
+	$(CPP) -c src/paradox.c -o src/paradox.o $(CXXFLAGS)
+
+src/px_crypt.o: src/px_crypt.c
+	$(CPP) -c src/px_crypt.c -o src/px_crypt.o $(CXXFLAGS)
+
+src/px_encode.o: src/px_encode.c
+	$(CPP) -c src/px_encode.c -o src/px_encode.o $(CXXFLAGS)
+
+src/px_error.o: src/px_error.c
+	$(CPP) -c src/px_error.c -o src/px_error.o $(CXXFLAGS)
+
+src/px_head.o: src/px_head.c
+	$(CPP) -c src/px_head.c -o src/px_head.o $(CXXFLAGS)
+
+src/px_io.o: src/px_io.c
+	$(CPP) -c src/px_io.c -o src/px_io.o $(CXXFLAGS)
+
+src/px_memory.o: src/px_memory.c
+	$(CPP) -c src/px_memory.c -o src/px_memory.o $(CXXFLAGS)
+
+src/px_memprof.o: src/px_memprof.c
+	$(CPP) -c src/px_memprof.c -o src/px_memprof.o $(CXXFLAGS)
+
+src/px_misc.o: src/px_misc.c
+	$(CPP) -c src/px_misc.c -o src/px_misc.o $(CXXFLAGS)
+
+libiconv-1.17/src/iconv.o: libiconv-1.17/src/iconv.c
+	$(CPP) -c libiconv-1.17/src/iconv.c -o libiconv-1.17/src/iconv.o $(CXXFLAGS)
+
+libiconv-1.17/src/iconv_no_i18n.o: libiconv-1.17/src/iconv_no_i18n.c
+	$(CPP) -c libiconv-1.17/src/iconv_no_i18n.c -o libiconv-1.17/src/iconv_no_i18n.o $(CXXFLAGS)
