@@ -1,0 +1,222 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\BdeTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\BdeTest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BDETEST_DIALOG DIALOGEX 0, 0, 312, 231
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Borland Database Engine Tester"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDCANCEL,255,60,50,14
+    PUSHBUTTON      "Test Connection",IDB_TEST_CONNECTION,255,140,55,14
+    PUSHBUTTON      "Append",IDB_APPEND,155,210,30,14
+    PUSHBUTTON      "Edit",IDB_EDIT,125,210,25,14
+    LTEXT           "Character String:",IDC_STATIC,10,10,60,8
+    LTEXT           "Short:",IDC_STATIC,10,25,50,8
+    LTEXT           "Long:",IDC_STATIC,10,40,45,8
+    LTEXT           "Float:",IDC_STATIC,10,55,50,8
+    LTEXT           "Currency:",IDC_STATIC,10,70,50,8
+    LTEXT           "Logical:",IDC_STATIC,10,85,55,8
+    LTEXT           "Date:",IDC_STATIC,10,100,45,8
+    LTEXT           "Time:",IDC_STATIC,10,115,55,8
+    LTEXT           "Memo:",IDC_STATIC,10,160,50,8
+    EDITTEXT        ET_CHAR,75,5,120,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_SHORT,75,20,50,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_LONG,75,35,95,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_FLOAT,75,50,95,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_CURRENCY,75,65,95,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_LOGICAL,75,80,95,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_DATE,75,95,95,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_TIME,75,110,95,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_TIMESTAMP,75,125,95,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_MEMO,75,155,150,45,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    LTEXT           "Time Stamp:",IDC_STATIC,10,130,55,8
+    PUSHBUTTON      "First",IDB_FIRST,5,210,25,14
+    PUSHBUTTON      "Connect Paradox",IDB_CONNECT,235,5,70,14
+    PUSHBUTTON      "Prior",IDB_PRIOR,35,210,25,14
+    PUSHBUTTON      "Next",IDB_NEXT,65,210,25,14
+    PUSHBUTTON      "Last",IDB_LAST,95,210,25,14
+    PUSHBUTTON      "Insert",IDB_INSERT,220,210,25,14
+    PUSHBUTTON      "Cancel",IDB_CANCEL_EDIT,280,210,25,14
+    PUSHBUTTON      "Post",IDB_POST,250,210,25,14
+    LTEXT           "BCD:",IDC_STATIC,10,145,45,8
+    EDITTEXT        ET_BCD,75,140,95,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Disconnect",IDB_DISCONNECT,255,40,50,14
+    PUSHBUTTON      "Delete",IDB_DELETE,190,210,25,14
+    EDITTEXT        ET_SHORT_TYPE,175,20,40,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_LONG_TYPE,175,35,75,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_FLOAT_TYPE,175,50,75,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_CURRENCY_TYPE,175,65,75,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_DATE_TYPE,175,95,75,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_TIME_TYPE,175,110,75,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_TIMESTAMP_TYPE,175,125,75,14,ES_AUTOHSCROLL
+    EDITTEXT        ET_BCD_TYPE,175,140,75,14,ES_AUTOHSCROLL
+    CONTROL         "Logical",CB_LOGICAL_TYPE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,175,80,75,10
+    PUSHBUTTON      "Set Type Values",IDB_SET_TYPE_VALUES,240,165,65,14
+    PUSHBUTTON      "Set Blank",IDB_SET_BLANK,240,185,65,14
+    PUSHBUTTON      "Connect dBase",IDB_CONNECT_DBASE,235,20,70,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "BdeTest MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "BdeTest\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "BdeTest.EXE\0"
+            VALUE "ProductName", "BdeTest Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_BDETEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\BdeTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
