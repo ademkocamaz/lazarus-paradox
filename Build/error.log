@@ -1,0 +1,36 @@
+Date/time          : 2023-10-28 17:04:29.949
+Operating system   : Windows 10 x86_64
+user name          : ilkAdam
+program up time    : 0days 0hours 0min 0sec 110ms
+free disk space    : 49 GB
+Process ID         : 22892
+Thread ID          : 31528
+Executable         : project1.exe
+App. title         : project1
+Version            : 
+Compiled date      : 2023/10/28 at 17:01:50
+Build target       : i386 - Win32
+LCL version        : LCL 2.2.6.0
+Widget set         : win32/win64
+Exception class    : Exception
+Exception message  : Could not load library: pxlib.dll
+
+01: 0062D360   LOADPXLIB in pxlib.pp (495)
+02: 00609373   INITPXLIB in paradox.pp (233)
+03: 00609DF5   TPARADOX.INTERNALOPEN in paradox.pp (507)
+04: 006205BB   CHANGEPARENTDLG_$$_init$ in changeparentdlg.pas (277)
+05: 00622DBC   CHANGEPARENTDLG_$$_init$ in changeparentdlg.pas (277)
+06: 0041F6CD   TCUSTOMFORM.ACTIVATE in ./include/customform.inc (610)
+07: 0041FD86   TCUSTOMFORM.CMACTIVATE in ./include/customform.inc (820)
+08: 0040DC61     (1532)
+09: 00505433   TWINCONTROL.WNDPROC in ./include/wincontrol.inc (5433)
+10: 004213BB   TCUSTOMFORM.WNDPROC in ./include/customform.inc (1462)
+11: 0050E956   TCONTROL.PERFORM in ./include/control.inc (1617)
+12: 0042793B   TSCREEN.SETFOCUSEDFORM in ./include/screen.inc (958)
+13: 00423EF7   TCUSTOMFORM.SETFOCUSEDCONTROL in ./include/customform.inc (2607)
+14: 00505249   TWINCONTROL.WNDPROC in ./include/wincontrol.inc (5361)
+15: 005AD3F3   TCUSTOMGRID.WNDPROC in grids.pas (4949)
+16: 0063D8E3   TCUSTOMDBGRID.WNDPROC in dbgrids.pas (1575)
+17: 005A4540   DELIVERMESSAGE in lclmessageglue.pas (112)
+
+
