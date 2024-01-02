@@ -5,7 +5,7 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, DBGrids, paradox;
+  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, DBGrids, DBCtrls, paradox;
 
 type
 
@@ -14,6 +14,7 @@ type
   TForm1 = class(TForm)
     DataSource1: TDataSource;
     DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
     Paradox1: TParadox;
     procedure FormActivate(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
@@ -43,4 +44,3 @@ begin
 end;
 
 end.
-

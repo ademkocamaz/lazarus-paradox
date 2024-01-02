@@ -1,35 +1,57 @@
 object Form1: TForm1
-  Left = 568
-  Height = 732
-  Top = 128
-  Width = 1006
+  Left = -8
+  Height = 770
+  Top = -8
+  Width = 1022
   Caption = 'Form1'
-  ClientHeight = 732
-  ClientWidth = 1006
+  ClientHeight = 750
+  ClientWidth = 1370
   OnActivate = FormActivate
   OnClose = FormClose
-  LCLVersion = '2.2.6.0'
+  WindowState = wsMaximized
   object DBGrid1: TDBGrid
     Left = 0
-    Height = 732
-    Top = 0
-    Width = 1006
+    Height = 725
+    Top = 25
+    Width = 1370
     Align = alClient
     Color = clWindow
     Columns = <>
     DataSource = DataSource1
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgAutoSizeColumns, dgDblClickAutoSize, dgDisplayMemoText]
     TabOrder = 0
   end
+  object DBNavigator1: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 0
+    Width = 1370
+    Align = alTop
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 1370
+    DataSource = DataSource1
+    Flat = True
+    Options = []
+    TabOrder = 1
+  end
   object Paradox1: TParadox
-    FileName = 'FIRMA.DB'
+    FileName = 'CARIKRT.DB'
+    BlobFileName = 'CARIKRT.MB'
     TargetEncoding = 'UTF-8'
     FieldDefs = <>
-    Left = 264
-    Top = 8
+    Left = 248
+    Top = 72
   end
   object DataSource1: TDataSource
     DataSet = Paradox1
-    Left = 336
-    Top = 8
+    Left = 352
+    Top = 72
   end
 end

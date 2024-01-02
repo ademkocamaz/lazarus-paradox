@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, UExceptionLogger, lazparadox, Unit1
+  Forms, UExceptionLogger, virtualdbgrid_package, lazparadox, Unit1
   { you can add units after this };
 
 {$R *.res}
